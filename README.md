@@ -14,11 +14,17 @@ docker run -it -d --name kotlin_container kotlin_image
 ```bash
 docker exec -it kotlin_container bash
 ```
-## コンパイル
+## 実行
+### 簡易実行
+- ファイル名を指定して実行できるスクリプト
+```bash
+./run.sh
+```
+### コンパイル
 ```bash
 kotlinc hello.kt -include-runtime -d hello.jar
 ```
-## 実行
+### 実行
 ```bash
 java -jar hello.jar
 ```
