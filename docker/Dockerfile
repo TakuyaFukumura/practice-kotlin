@@ -14,3 +14,4 @@ RUN bash -c ". $HOME/.sdkman/bin/sdkman-init.sh \
 
 # clone app
 RUN cd $HOME && git clone https://github.com/TakuyaFukumura/practice-kotlin.git
+RUN chmod 755 $HOME/practice-kotlin/run.sh
