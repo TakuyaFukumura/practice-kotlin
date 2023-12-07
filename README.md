@@ -14,3 +14,11 @@ docker run -it -d --name kotlin_container kotlin_image
 ```bash
 docker exec -it kotlin_container bash
 ```
+## コンパイル
+```bash
+kotlinc hello.kt -include-runtime -d hello.jar
+```
+## 実行
+```bash
+java -jar hello.jar
+```
