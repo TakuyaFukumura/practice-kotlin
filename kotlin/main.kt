@@ -5,4 +5,11 @@ fun main() {
     var c: Int // 初期値省略可能だが自動で値は入らない
     c = a + b
     println(c)
+
+    // if
+    if(c == 6){
+        println("true")
+    }else{
+        println("false")
+    }
 }
