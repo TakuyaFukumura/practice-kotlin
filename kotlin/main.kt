@@ -1,4 +1,14 @@
 fun main() {
+    for (i in 1..5) {
+        if (i == 2) {
+            println("*")
+            break
+        }
+        println(i)
+    }
+}
+
+fun sub() {
     // 変数
     var a: Int = 1 // var 変数名: 型 = 値
     var b = 2 // 型宣言省略可能
@@ -7,16 +17,16 @@ fun main() {
     println(c)
 
     // if
-    if(c == 6){
+    if (c == 6) {
         println("true")
-    }else{
+    } else {
         println("false")
     }
 
     // loop
     // for
     val MAX = 5
-    for(i in 1..MAX){ // 1から5までループ（5回）
+    for (i in 1..MAX) { // 1から5までループ（5回）
         if (i == MAX) println(i) else print(i)
     }
     for (i in 6 downTo 0 step 2) { // 6から2ずつ引いていく
@@ -30,11 +40,10 @@ fun main() {
     }
     // forEach
     var array = arrayOf("Red", "Green", "Blue")
-    array.forEach {
-        value -> println(value)
-    }
+    array.forEach { value -> println(value) }
     array.forEachIndexed { // indexも取得する
-        index, value -> println("${index} : ${value}")
+    index, value ->
+        println("${index} : ${value}")
     }
     // while
     var i = 10
@@ -43,9 +52,9 @@ fun main() {
         --i
     }
     // do-while
-    var i = 3
+    var j = 3
     do {
-        i--
-        println("■")
+        j--
+        println("*")
     } while (i > 0)
 }

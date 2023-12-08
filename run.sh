@@ -1,6 +1,4 @@
 #!/bin/bash
 
-git pull
-read NAME
-kotlinc ./kotlin/$NAME.kt -include-runtime -d $NAME.jar
-java -jar $NAME.jar
+kotlinc ./kotlin/main.kt -include-runtime -d main.jar
+java -jar main.jar
