@@ -25,4 +25,7 @@ fun main() {
     for (i in 7 downTo 0 step 2) { // 7から2ずつ引いていく、0以下にはならない模様
         println(i)
     }
+    for (i in 10..1) {
+        println(i)
+    }
 }
