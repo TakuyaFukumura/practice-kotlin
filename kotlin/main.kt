@@ -1,13 +1,25 @@
 fun main() {
+    val obj: Any = "Hello" // Any型は任意の型
+    println(
+        when (obj) { // objの内容によって分岐する
+            1 -> "One"
+            in 2..3 -> "Two or Three"
+            "Hello" -> "Greeting"
+            is Long -> "Long"
+            !is String -> "Not a string"
+            else -> "Unknown"
+        }
+    )
+}
+
+fun sub() {
+    // continue
     for (i in 1..5) {
         if (i == 2) {
             continue // 次のループへ行く
         }
         println(i)
     }
-}
-
-fun sub() {
     // break
     for (i in 1..5) {
         if (i == 2) {
