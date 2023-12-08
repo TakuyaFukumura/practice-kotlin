@@ -28,4 +28,12 @@ fun main() {
     for (i in 10..1) { // 何もせず終わるもよう
         println(i)
     }
+    // forEach
+    var array = arrayOf("Red", "Green", "Blue")
+    array.forEach {
+        value -> println(value)
+    }
+    array.forEachIndexed {
+        index, value -> println("${index}：${value}")
+    }
 }
