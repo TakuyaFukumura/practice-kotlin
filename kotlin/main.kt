@@ -1,14 +1,21 @@
 fun main() {
     for (i in 1..5) {
         if (i == 2) {
-            println("*")
-            break
+            continue // 次のループへ行く
         }
         println(i)
     }
 }
 
 fun sub() {
+    // break
+    for (i in 1..5) {
+        if (i == 2) {
+            println("*")
+            break
+        }
+        println(i)
+    }
     // 変数
     var a: Int = 1 // var 変数名: 型 = 値
     var b = 2 // 型宣言省略可能
