@@ -33,7 +33,7 @@ fun main() {
     array.forEach {
         value -> println(value)
     }
-    array.forEachIndexed {
+    array.forEachIndexed { // indexも取得する
         index, value -> println("${index} : ${value}")
     }
     // while
@@ -42,4 +42,10 @@ fun main() {
         println(i--)
         --i
     }
+    // do-while
+    var i = 3
+    do {
+        i--
+        println("■")
+    } while (i > 0)
 }
