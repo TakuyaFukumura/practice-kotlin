@@ -15,10 +15,11 @@ fun main() {
 
     // loop
     // for
-    for(i in 1..5){
-        print(3)
+    val MAX = 5
+    for(i in 1..MAX){ // 1から5までループ（5回）
+        if (i == MAX) println(i) else print(i)
     }
-    for (i in 6 downTo 0 step 2) {
+    for (i in 6 downTo 0 step 2) { // 6から2ずつ引いていく
         println(i)
     }
 }
