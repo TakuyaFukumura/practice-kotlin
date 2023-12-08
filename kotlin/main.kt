@@ -12,4 +12,13 @@ fun main() {
     }else{
         println("false")
     }
+
+    // loop
+    // for
+    for(i in 1..5){
+        print(3)
+    }
+    for (i in 6 downTo 0 step 2) {
+        println(i)
+    }
 }
