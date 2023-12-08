@@ -22,4 +22,7 @@ fun main() {
     for (i in 6 downTo 0 step 2) { // 6から2ずつ引いていく
         println(i)
     }
+    for (i in 7 downTo 0 step 2) { // 7から2ずつ引いていく
+        println(i)
+    }
 }
