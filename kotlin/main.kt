@@ -36,4 +36,10 @@ fun main() {
     array.forEachIndexed {
         index, value -> println("${index} : ${value}")
     }
+    // while
+    var i = 10
+    while (i > 0) { // 0より大きい限りループする
+        println(i--)
+        --i
+    }
 }
