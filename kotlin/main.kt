@@ -34,6 +34,6 @@ fun main() {
         value -> println(value)
     }
     array.forEachIndexed {
-        index, value -> println("${index}：${value}")
+        index, value -> println("${index} : ${value}")
     }
 }
